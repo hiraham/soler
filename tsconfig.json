@@ -5,9 +5,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "skipLibCheck": false, // Temporarily set to false for debugging
-    "strict":true,
+    "skipLibCheck": true, // Temporarily set to false for debugging
+    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -25,7 +26,8 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",

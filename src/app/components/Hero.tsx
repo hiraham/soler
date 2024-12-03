@@ -33,7 +33,8 @@ const HeroSection: React.FC = () => {
             Get in Touch
           </a>
         </div>
-      </div>
+      </div>cmd
+      
     </div>
   );
 };

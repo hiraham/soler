@@ -6,7 +6,7 @@ const ServicesPage: React.FC = () => {
       title: "Solar System Installation",
       description:
         "We provide professional solar system installation services for residential, commercial, and industrial needs. Our team ensures efficient and seamless installation.",
-      imageUrl: "/Images/j.jpg", // Replace with actual image path
+        imageUrl: "/Images/j.jpg", // Replace with actual image path
     },
     {
       title: "Solar System Maintenance",
@@ -60,7 +60,7 @@ const ServicesPage: React.FC = () => {
               <img
                 src={service.imageUrl}
                 alt={service.title}
-                className="w-full h-48 object-cover mb-6 rounded-t-lg"
+                className="w-full h-[50px] object-cover mb-6 rounded-t-lg"
               />
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 {service.title}

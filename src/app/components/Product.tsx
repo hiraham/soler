@@ -47,9 +47,7 @@ const BestSellingProducts: React.FC = () => {
                 {product.title}
               </h2>
               <p className="text-gray-600 mb-4">{product.description}</p>
-              <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition-all duration-300">
-                Learn More
-              </button>
+             
             </div>
           ))}
         </div>

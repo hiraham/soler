@@ -1,28 +1,27 @@
 import React from "react";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
-      <div className="max-w-screen-xl mx-auto px-4">
-        {/* Logo and Description Section */}
+    <footer className="bg-[#2C5878] text-white py-12">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-14">
+        {/* Grid Layout for Footer Sections */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Description Section */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">MK SOLER TECHNOLOGIES</h2>
-            <p>
-              MK Solar Technologies is Sindh’s first solar renewable energy store which
-              offers a key feature to calculate your energy requirements. We are
-              here to facilitate you through a range of solar panels, Solar
-              Electrical Accessories, Solar inverter, and solar batteries.
+            <h2 className="text-2xl font-bold mb-4">MK Solar Technologies</h2>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              MK Solar Technologies is Sindh’s first solar renewable energy store offering innovative solutions for energy needs. We provide a range of solar panels, inverters, batteries, and accessories to make renewable energy accessible for everyone.
             </p>
           </div>
 
           {/* Services Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <ul className="space-y-2 text-gray-400 text-sm">
               <li>Domestic Solar Solutions</li>
               <li>Commercial Solar Solutions</li>
-              <li>Industrial Solar Solution</li>
+              <li>Industrial Solar Solutions</li>
               <li>Net Metering</li>
               <li>Solar Design</li>
               <li>Solar Consultancy</li>
@@ -32,30 +31,39 @@ const Footer: React.FC = () => {
           {/* Product Categories Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Product Categories</h3>
-            <ul className="space-y-2">
-              <li>Solar Panel</li>
-              <li>Solar Inverter</li>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>Solar Panels</li>
+              <li>Solar Inverters</li>
               <li>Solar Batteries</li>
-              <li>Solar Water Pump</li>
+              <li>Solar Water Pumps</li>
               <li>DC Breakers & SPDs</li>
-              <li>Mounting Structure</li>
+              <li>Mounting Structures</li>
             </ul>
           </div>
-        
 
-        {/* Contact Info Section */}
-        <div className="mt-10 text-center">
-          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p>Shahra-e-Faisal, Karachi, Sindh, Pakistan</p>
-          <p>+92 321 2735160</p>
-          <p>https://MKtechnologies.pk</p>
-          <p>info@mktechologies.pk</p>
-        </div>
+          {/* Contact Info Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li className="flex items-center gap-2">
+                <FaMapMarkerAlt /> Shahra-e-Faisal, Karachi, Sindh, Pakistan
+              </li>
+              <li className="flex items-center gap-2">
+                <FaPhoneAlt /> +92 321 2735160
+              </li>
+              <li className="flex items-center gap-2">
+                <FaEnvelope /> info@mktechologies.pk
+              </li>
+              <li className="flex items-center gap-2">
+                <FaGlobe /> <a href="https://MKtechnologies.pk" className="hover:underline">MKtechnologies.pk</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 border-t pt-4 text-center text-sm text-gray-400">
-          <p>© Copyright 2012 - 2024 MK Solar Tecnologies | All Rights Reserved</p>
+        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+          <p>© 2012 - 2024 MK Solar Technologies. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

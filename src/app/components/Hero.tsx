@@ -1,20 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
     <div>
       <div className="relative bg-grey-800">
         {/* Background Image */}
-        <img
+        <Image
           src="/Images/x.jpg"
           alt="Solar Tech"
           width={1200}
           height={1000}
-          className="object-cover w-full h-[600px] md:h-[800px] lg:h-[600px]"
+          className="object-cover w-full h-[600px] md:h-[800px] lg:h-[500px]"
         />
 
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full  opacity-50"></div>
 
         {/* Content */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
@@ -33,7 +34,7 @@ const HeroSection: React.FC = () => {
             Get in Touch
           </a>
         </div>
-      </div>cmd
+      </div>
       
     </div>
   );
